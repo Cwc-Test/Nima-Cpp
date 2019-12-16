@@ -2,22 +2,26 @@
 ;-D_PLATFORM_WINDOWS
 >
 -{vIncl}=
--I ../Source/ 
+-I ../
 -I ../NimaMath/ 
 >
 ;Build Nima
--c ../Source/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/Nima/
+-c ../nima/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/Nima/
 -{vIncl}
 >
 ;Build NimaMath
 -c ../NimaMath/nima/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/NimaMath/
 -{vIncl}
 >
+;Build Test
+-c ../Test/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/Test/
+-{vIncl}
+>
 ;Generate Dynamic Lib
-;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/box2d.{_sDynamic}
+;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/Nima.{_sDynamic}
 >
 ;Generate Static Lib
-;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/box2d.a
+;-o obj/cpp_{_sPlatform}_{_sOpt}/lib/ -#To Lib/{_sPlatform}_{_sOpt}/Nima.a
 >
 ;Build Main Example
 -c ../HelloWorld/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/HelloWorld/
