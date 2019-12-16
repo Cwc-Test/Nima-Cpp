@@ -1,6 +1,8 @@
 #include "ActorIKConstraint.hpp"
 #include "Actor.hpp"
 #include <cmath>
+#include <algorithm> 
+
 
 using namespace nima;
 

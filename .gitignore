@@ -1,2 +1,5 @@
 .DS_Store
 /Build
+cwc/obj/
+cwc/_out/
+*.wdat
