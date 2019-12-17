@@ -27,7 +27,10 @@
 -c ../HelloWorld/ -o obj/cpp_{_sPlatform}_{_sOpt}/lib/HelloWorld/
 -{vIncl}
 >
+-#Copy ../Test/Assets/  _out/{_sPlatform}_{_sOpt}/Assets/
+>
 ;Generate executable
 -o obj/cpp_{_sPlatform}_{_sOpt}/ -#To _out/{_sPlatform}_{_sOpt}/App.*
 >
 -#Run
+
